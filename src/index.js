@@ -25,6 +25,6 @@ console.log("api")
 app.use('/multiplayer/serverinfo',multiplayerRoutes)
 
 
-app.listen(ServerConfig.PORT,(req,res) => {
+app.listen(ServerConfig.PORT || 3000,(req,res) => {
     console.log(`Successfully started the server at : ${ServerConfig.PORT}`)
 })
